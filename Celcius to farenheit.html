@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Celcius to Farenheit </title>
+<script language=javascript>
+
+function convert(degree)
+{
+var x;
+if(degree=="c")
+{
+x=document.getElementById("c").value*9/5+32;
+document.getElementById("f").value=Math.round(x)
+}
+else
+{
+x=(document.getElementById("f").value-32)*5/9;
+document.getElementById("c").value=Math.round(x)
+}
+}
+</script>
+</head>
+<body bgcolor=blue>
+<form>
+<p><input type=text id="c" onkeyup="convert('c')"> Degree Celcius </p>
+<p><input type=text id="f" onkeyup="convert('f')"> Degree Farenheit </p>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+

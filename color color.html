@@ -1,0 +1,50 @@
+<html>
+<head>
+<title> Event driven client side scripting </title>
+
+<script language=Javascript>
+
+Function F1()
+{
+document.bgcolor="Red";
+window.setTimeout("F2()", 1200);
+}
+Function F2()
+{
+document.bgcolor="Blue";
+window.setTimeout("F3()", 1200);
+}
+Function F3()
+{
+document.bgcolor="Green";
+window.setTimeout("F4()", 1200);
+}
+Function F4()
+{
+document.bgcolor="Pink";
+window.setTimeout("F5()", 1200);
+}
+Function F5()
+{
+document.bgcolor="Orange";
+window.setTimeout("F1()", 1200);
+}
+
+Function msg()
+{
+window.status="This page is displaying 7 different colours in a loop";
+}
+</script>
+</head>
+
+<body>
+
+<FORM>
+<input type="button" value="Color" onMouseOver="F1()">
+<input type="button" value="Message" onClick="msg()">
+
+</FORM>
+</body>
+</html>
+
+

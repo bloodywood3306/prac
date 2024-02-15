@@ -1,0 +1,41 @@
+<html>
+<head>
+<title> Javascript Code </title>
+<script language=javascript>
+
+function grade()
+{
+eng=parseInt(document.f1.t1.value);
+phy=parseInt(document.f1.t2.value);
+chem=parseInt(document.f1.t3.value);
+bio=parseInt(document.f1.t4.value);
+maths=parseInt(document.f1.t5.value);
+IT=parseInt(document.f1.t6.value);
+var tot=eng+phy+chem+bio+maths+IT;
+var avg=tot/6;
+document.f1.t7.value=avg;
+if(avg<=35&&avg>=100)
+{
+alert("Grade-E");
+}
+}
+</script>
+</head>
+<body>
+<form name=f1>
+Enter English marks<input type=text name=t1><br><br>
+Enter Physics marks<input type=text name=t2><br><br>
+Enter Chemistry marks<input type=text name=t3><br><br>
+Enter Biology marks<input type=text name=t4><br><br>
+Enter Maths marks<input type=text name=t5><br><br>
+Enter IT marks<input type=text name=t6><br><br>
+Average marks<input type=text name=t7><br><br>
+<input type=button value=submit onClick="grade()">
+</form>
+</body>
+</html>
+
+
+
+
+
