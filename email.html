@@ -1,0 +1,41 @@
+<html>
+<head>
+<title> Validation of Email-Id </title>
+<script language=javascript>
+
+function email()
+{
+var x=form1.em.value;
+var atpos=x.indexOf("@");
+var lastat=x.lastIndexOf(".");
+var firstdot=x.IndexOf(".");
+var dotpos=x.lastIndexOf(".");
+
+if(atpos<1||dostpos<(atpos+2)||(dotpos+2)>=x.length||firstdot<atpos||atpos<lastat)
+
+{
+alert("Not a valid email ID");
+form1.em.focus;
+}
+
+else
+{
+alert("Email ID is accepted);
+}
+
+</script>
+</head>
+
+<body bgcolor=lightpink>
+
+<form name=form1 onSubmit="email()" method="post">
+
+Enter name <input type=text name=t1><br><br>
+Enter address <textarea name=t2 placeholder="PERMANENT ADDRESS"></textarea><br>
+Enter telephone number <input type=tel maxlength=10><br><br>
+Enter Email ID <input type=Email name=em><br><br>
+<input type=submit value=validate>
+
+</form>
+</body>
+</html>
