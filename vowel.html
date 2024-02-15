@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> To count vowels </title>
+<script language=javascript>
+
+function count()
+{
+var str
+str=f1.t1.value
+document.write("<br><br>string is =" +str);
+var vowelcount=0;
+var string=str.toString();
+document.write("<br>Vowels in the string are");
+for(var i=0;i<=string.length-1;i++)
+
+{
+if(string.charAt(i)=="a"||string.charAt(i)=="e"||string.charAt(i)=="i"||string.charAt(i)=="o"||string.charAt(i)=="u")
+{
+vowelcount +=1;
+document.write("<br>");
+document.write(string.charAt(i));
+}
+}
+
+document.write("<br><br>Number of vowels in string is =" +vowelcount);
+}
+</script>
+</head>
+
+<body bgcolor=lightpink>
+
+<form name=f1>
+<h1> Please enter the text <input type=text name=t1><br><br>
+<input type=button value=find onClick=count()></h1>
+
+</form>
+</body>
+</html>
