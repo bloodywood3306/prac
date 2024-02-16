@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Event driven client side scripting</title>
+<Script language="javascript">
+function F1()
+{
+document.bgColor="Red";
+window.setTimeout("F2()",1200);
+}
+function F2()
+{
+document.bgColor="Blue";
+window.setTimeout("F3()",1200);
+}
+function F3()
+{
+document.bgColor="Pink";
+window.setTimeout("F4()",1200);
+}
+function F4()
+{
+document.bgColor="Orange";
+window.setTimeout("F5()",1200);
+}
+function F5()
+{
+document.bgColor="Brown";
+window.setTimeout("F6()",1200);
+}
+function F6()
+{
+document.bgColor="lightgreen";
+window.setTimeout("F7()",1200);
+}
+function F7()
+{
+document.bgColor="Yellow";
+window.setTimeout("F1()",1200);
+}
+function msg()
+{ 
+alert("PAGE IS CLOSED");
+}
+</script>
+</head>
+<body onload="F1()" onunload="msg()"></body></html>
