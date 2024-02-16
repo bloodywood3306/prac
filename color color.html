@@ -1,49 +1,56 @@
 <html>
 <head>
-<title> Event driven client side scripting </title>
-
-<script language=Javascript>
-
-Function F1()
+<title>Event driven client side scripting</title>
+<Script language="javascript">
+function F1()
 {
-document.bgcolor="Red";
-window.setTimeout("F2()", 1200);
+document.bgColor="Red";
+window.setTimeout("F2()",1200);
 }
-Function F2()
+function F2()
 {
-document.bgcolor="Blue";
-window.setTimeout("F3()", 1200);
+document.bgColor="Blue";
+window.setTimeout("F3()",1200);
 }
-Function F3()
+function F3()
 {
-document.bgcolor="Green";
-window.setTimeout("F4()", 1200);
+document.bgColor="Pink";
+window.setTimeout("F4()",1200);
 }
-Function F4()
+function F4()
 {
-document.bgcolor="Pink";
-window.setTimeout("F5()", 1200);
+document.bgColor="Orange";
+window.setTimeout("F5()",1200);
 }
-Function F5()
+function F5()
 {
-document.bgcolor="Orange";
-window.setTimeout("F1()", 1200);
+document.bgColor="Brown";
+window.setTimeout("F6()",1200);
 }
-
-Function msg()
+function F6()
 {
-window.status="This page is displaying 7 different colours in a loop";
+document.bgColor="lightgreen";
+window.setTimeout("F7()",1200);
+}
+function F7()
+{
+document.bgColor="Yellow";
+window.setTimeout("F1()",1200);
+}
+function msg()
+{
+window.status="This page is displaying 7 different colors in loop";
 }
 </script>
 </head>
 
 <body>
 
-<FORM>
-<input type="button" value="Color" onMouseOver="F1()">
-<input type="button" value="Message" onClick="msg()">
+<form>
+<input type=button value=Color onMouseOver="F1()">
+<input type=button value=Message onClick="msg()">
+</form>
 
-</FORM>
 </body>
 </html>
 
