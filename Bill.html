@@ -1,0 +1,35 @@
+<html>
+<body>
+<h1 align=center> Electricity Bill </h1>
+<form method=post action=Bill.php>
+<input type=text name="units"><br><br>
+<input type=submit name=submit value="Calculate Bill">
+</form>
+</body>
+</html>
+
+<?php
+if(isset($_POST['submit']))
+{
+$units = $_POST['units'];
+if($units<=100)
+{
+$b=($units*4);
+echo "Your bill amount is $b";
+}
+else
+{
+if($units<=200)
+{
+$b=400+($units-100)*5;
+echo "Your bill amount is $b";
+}
+else
+{
+$b=400+500+($units-100)*6;
+echo "Your bill amount is $b";
+}
+}
+}
+?>
+
